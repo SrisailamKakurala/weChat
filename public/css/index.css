@@ -1,0 +1,6 @@
+.outgoing-msg{
+    background-color: white;
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 45%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weChat!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8d6f634fe9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="h-[100vh] w-[100vw]">
+        <div class="h-[100vh] w-[100vw] flex">
+
+            <!-- left section -->
+            <section class="h-[100vh] w-[25%] bg-black ">
+
+                <!-- search -->
+                <div class="h-[10%] bg-black flex items-center justify-center">
+                    <input type="search" placeholder="search user" class="h-[65%] w-[90%] p-5 font-bold rounded shadow-xl ">
+                </div>
+
+                <!-- contacts -->
+                <div class="p-5 flex flex-col gap-2">
+                    <!-- contact -->
+                    <div class="h-[65px] w-[100%] tracking-wide font-bold rounded shadow-xl bg-slate-800 hover:bg-slate-700 text-white flex items-center ">
+                        <div class="pp flex items-center justify-center w-[20%]">
+                            <img src="https://th.bing.com/th/id/OIP.wjUrQqjbGRO7AnZajtaFQgHaGn?w=188&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="pp" class=" shadow rounded-[50%] h-[50px]">
+                        </div>
+                        <div class="px-2 text-xl ">saitama sensei</div>
+                    </div>
+
+                     <!-- contact -->
+                    <div class="h-[65px] w-[100%] tracking-wide font-bold rounded shadow-xl bg-slate-800 hover:bg-slate-700 text-white flex items-center ">
+                        <div class="pp flex items-center justify-center w-[20%]">
+                            <img src="https://th.bing.com/th/id/OIP.wjUrQqjbGRO7AnZajtaFQgHaGn?w=188&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="pp" class=" shadow rounded-[50%] h-[50px]">
+                        </div>
+                        <div class="px-2 text-xl ">saitama sensei</div>
+                    </div>
+
+                    <!-- contact -->
+                    <div class="h-[65px] w-[100%] tracking-wide font-bold rounded shadow-xl bg-slate-800 hover:bg-slate-700 text-white flex items-center ">
+                        <div class="pp flex items-center justify-center w-[20%]">
+                            <img src="https://th.bing.com/th/id/OIP.wjUrQqjbGRO7AnZajtaFQgHaGn?w=188&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="pp" class=" shadow rounded-[50%] h-[50px]">
+                        </div>
+                        <div class="px-2 text-xl ">saitama sensei</div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- right section -->
+            <section class="h-[100vh] w-[75%] bg-slate-800 text-white">
+                <div class="h-[100%] ">
+
+                    <!-- top profile section -->
+                    <div class="h-[10%] bg-black ">
+                        <div class="h-[100%] w-[100%] tracking-wide font-bold rounded shadow-xl text-white flex items-center ">
+                            <div class="pp flex items-center justify-center w-[10%]">
+                                <img src="https://th.bing.com/th/id/OIP.wjUrQqjbGRO7AnZajtaFQgHaGn?w=188&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="pp" class="cursor-pointer shadow rounded-[50%] h-[50px]">
+                            </div>
+                            <div class="px-2 text-xl cursor-pointer">saitama sensei</div>
+                        </div>
+                    </div>
+
+                    <!-- chat container -->
+                    <main class="h-[90%]" >
+
+                        <!-- msg-section -->
+                        <div id="msg-section" class="h-[90%] font-bold p-4 flex flex-col overflow-y-auto">
+
+                                                       
+
+                        </div>
+
+                        <!-- input-section -->
+                        <div class="h-[10%] bg-black flex items-center justify-center ">
+                            <input id="input" type="text" placeholder="write a message" class="text-black h-[75%] w-[92%] py-2 px-3 font-bold rounded-xl shadow-xl ">
+                            <div class="w-[7%] h-[80%] flex items-center justify-center">
+                                <i id="send" class="fa-solid fa-paper-plane fa-xl text-green-600 cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                    </main>
+
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+</body>
+</html>
